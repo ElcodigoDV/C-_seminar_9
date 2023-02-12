@@ -6,19 +6,11 @@ M = 1; N = 15 -> 120
 M = 4; N = 8. -> 30 */
 
 
-// 8 7 6 5 4
+// n + (n+1) = 
 
 
-// n + (n - 1) + (n + (n - 1)-1)...
-// 8 + (8-1) 
-//         7 + (7-1)
-//                 6 + (6-1)
-/* 
-n + (n - 1)
-        n + (n-1)
-                n + (n + 1) */
 void SumRecurs(int lowNum, int upNum, int sum)
-{
+{   
     if (lowNum > upNum)
     {
         Console.WriteLine($" -> {sum}");
